@@ -1,5 +1,17 @@
 This is a test document.
 
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 <details>
 <summary>Click to expand markdown</summary>
 <p>
