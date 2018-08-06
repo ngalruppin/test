@@ -3,7 +3,7 @@ This is a test document.
 
 <details>
 <summary>Click to expand Code1</summary>
-<object data="code1.md" type="text/markdown" height="600" width="1200"></object>
+<embed src="code1.md" type="text/markdown" height="600" width="1200"></embed>
 </details>
 
 
