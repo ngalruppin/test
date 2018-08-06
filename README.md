@@ -9,5 +9,5 @@ This is a test document.
 
 <details>
 <summary>Click to expand Code2</summary>
-<object data="code2.md" type="text/markdown"></object>
+code 2 code2
 </details>
