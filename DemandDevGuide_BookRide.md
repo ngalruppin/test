@@ -6,8 +6,9 @@ To book a ride, the client first requests ride offers according to the required 
 
 1.  Call *RideOffersRequest*. In the call parameters, the client specifies the passenger details, pickup and dropoff locations, and optionally the number of suitcases the ride must accommodate. Optionally, the client can specify a future pickup time, a desired price range and a sort order for the returned ride offers.
 
+----
 <details>
-<summary>REST Example</summary>
+<summary><b>REST Example</b></summary>
 
 **Request:**
 
@@ -58,7 +59,7 @@ To book a ride, the client first requests ride offers according to the required 
     }
 
 </details>
-
+----
 
 2.  Receive a **RideOffersResponse** object. This is a list of **RideOffer** objects, containing details such as supplier ID, price, ETA and cancellation policy. If a sort order was specified in the request, the offer list is sorted by the order requested (lowest to highest price, or soonest to latest ETA).
 
