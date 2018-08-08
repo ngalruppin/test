@@ -63,6 +63,22 @@ To book a ride, the client first requests ride offers according to the required 
 
 ----
 
+<details>
+<summary><b>GRPC Example</b></summary>
+
+**Request:**
+
+    ???
+
+
+**Response:**
+
+    ???
+
+</details>
+
+----
+
 2.  Receive a **RideOffersResponse** object. This is a list of **RideOffer** objects, containing details such as supplier ID, price, ETA and cancellation policy. If a sort order was specified in the request, the offer list is sorted by the order requested (lowest to highest price, or soonest to latest ETA).
 
 3.  The passenger selects one of the offers.
