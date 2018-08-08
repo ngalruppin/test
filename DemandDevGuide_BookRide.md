@@ -9,7 +9,7 @@ To book a ride, the client first requests ride offers according to the required 
 ----
 <details>
 <summary><b>REST Example</b></summary>
-<div/>
+<hr/>
 
 **Request:**
 
