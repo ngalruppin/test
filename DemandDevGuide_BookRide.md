@@ -84,13 +84,14 @@ To book a ride, the client first requests ride offers according to the required 
 >**Note**: This workflow may be repeated as necessary, if a booking request fails.
 
 ----
+
 <details>
 <summary><b>REST Example</b></summary>
 
 **Request:**
 
 
-    curl -H "Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwiaXNzIjoicmVzdC1hc3N1cmVkIiwiZXhwIjoxNjQ0ODM4MTM2fQ." -H "Content-Type: application/json" -X POST -d '{ "offer_id": "5a8c48479b1d4c0001bf20ca", "user_id": "123456", "passenger": { "name": "asdasdasdasd", "phone_number": "+9725326589","photo_url": "http://asdasdasdasdasd"},"passenger_note": "north side of road" }' http://mobility-marketplace-test.here.com/demand.v1.s2s/rides -H "Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwiaXNzIjoicmVzdC1hc3N1cmVkIiwiZXhwIjoxNjQ0ODM4MTM2fQ."
+    curl http://mobility-marketplace-test.here.com/demand.v1.s2s/rides -X POST -H "Content-Type: application/json" -d '{ "offer_id": "5a8c48479b1d4c0001bf20ca", "user_id": "123456", "passenger": { "name": "asdasdasdasd", "phone_number": "+9725326589","photo_url": "http://asdasdasdasdasd"},"passenger_note": "north side of road" }'  -H "Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwiaXNzIjoicmVzdC1hc3N1cmVkIiwiZXhwIjoxNjQ0ODM4MTM2fQ."
 
 **Response:**
 
@@ -118,7 +119,9 @@ To book a ride, the client first requests ride offers according to the required 
 	}
 
 </details>
+
 ----
+
 <details>
 <summary><b>GRPC Example</b></summary>
 
@@ -132,5 +135,6 @@ To book a ride, the client first requests ride offers according to the required 
     ???
 
 </details>
+
 ----
 
