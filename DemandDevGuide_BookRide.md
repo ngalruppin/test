@@ -67,12 +67,12 @@ To book a ride, the client first requests ride offers according to the required 
 
 **Request:**
 
-    ???
+    COMING SOON
 
 
 **Response:**
 
-    ???
+    COMING SOON
 
 </details>
 
@@ -130,12 +130,12 @@ To book a ride, the client first requests ride offers according to the required 
 
 **Request:**
 
-    ???
+    COMING SOON
 
 
 **Response:**
 
-    ???
+    COMING SOON
 
 </details>
 
