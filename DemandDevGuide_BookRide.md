@@ -9,7 +9,6 @@ To book a ride, the client first requests ride offers according to the required 
 ----
 <details>
 <summary><b>REST Example</b></summary>
-<hr/>
 
 **Request:**
 
@@ -60,9 +59,7 @@ To book a ride, the client first requests ride offers according to the required 
     }
 
 </details>
-
 ----
-
 <details>
 <summary><b>GRPC Example</b></summary>
 
@@ -76,15 +73,64 @@ To book a ride, the client first requests ride offers according to the required 
     ???
 
 </details>
-
 ----
 
 2.  Receive a **RideOffersResponse** object. This is a list of **RideOffer** objects, containing details such as supplier ID, price, ETA and cancellation policy. If a sort order was specified in the request, the offer list is sorted by the order requested (lowest to highest price, or soonest to latest ETA).
 
 3.  The passenger selects one of the offers.
 
-4.  Call *CreateRideRequest*, passing the ID of the chosen offer. 
-5.  Receive a **Ride** object.
+4.  Call *CreateRideRequest*, passing the ID of the chosen offer. If successful, this call returns a **Ride** object.
 
 >**Note**: This workflow may be repeated as necessary, if a booking request fails.
+
+----
+<details>
+<summary><b>REST Example</b></summary>
+
+**Request:**
+
+
+    curl -H "Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwiaXNzIjoicmVzdC1hc3N1cmVkIiwiZXhwIjoxNjQ0ODM4MTM2fQ." -H "Content-Type: application/json" -X POST -d '{ "offer_id": "5a8c48479b1d4c0001bf20ca", "user_id": "123456", "passenger": { "name": "asdasdasdasd", "phone_number": "+9725326589","photo_url": "http://asdasdasdasdasd"},"passenger_note": "north side of road" }' http://mobility-marketplace-test.here.com/demand.v1.s2s/rides -H "Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiIxIiwiaXNzIjoicmVzdC1hc3N1cmVkIiwiZXhwIjoxNjQ0ODM4MTM2fQ."
+
+**Response:**
+
+	{
+	    "user_id": "1",
+	    "ride_id": "5a8c484836bb08000157c180",
+	    "booking_estimated_price": {
+	        "range": {
+	            "from_amount": "11",
+	            "to_amount": "97",
+	            "currency_code": "EUR"
+	        }
+	    },
+	    "status_log": {
+	 		"create_time": "2018-02-20T16:00:36Z",
+	 		"last_update_time": "2018-02-20T16:13:36Z",
+	        	"current_status": "PROCESSING"
+	    },
+	    "passenger": {
+	        "name": "asdasdasdasd",
+	        "phone_number": "+9725326589",
+	        "photo_url": "http://asdasdasdasdasd"
+	    },
+	    "passenger_note": "north side of the road"
+	}
+
+</details>
+----
+<details>
+<summary><b>GRPC Example</b></summary>
+
+**Request:**
+
+    ???
+
+
+**Response:**
+
+    ???
+
+</details>
+----
 
