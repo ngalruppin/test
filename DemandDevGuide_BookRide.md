@@ -6,9 +6,27 @@ To book a ride, the client first requests ride offers according to the required 
 
 1.  Call *RideOffersRequest*. In the call parameters, the client specifies the passenger details, pickup and dropoff locations, and optionally the number of suitcases the ride must accommodate. Optionally, the client can specify a future pickup time, a desired price range and a sort order for the returned ride offers.
 
+>**Note:** Both calls in this procedure are nearly identical for the C2S and S2S APIs, but in the S2S calls the **user_id** is passed. In the C2S calls, the user for whom the authentication token was created is assumed implicitly for all calls.
+
 ----
+
 <details>
-<summary><b>REST Example</b></summary>
+<summary><b>REST C2S Example</b></summary>
+
+**Request:**
+
+    COMING SOON
+
+**Response:**
+
+    COMING SOON
+
+</details>
+
+----
+
+<details>
+<summary><b>REST S2S Example</b></summary>
 
 **Request:**
 
@@ -63,12 +81,26 @@ To book a ride, the client first requests ride offers according to the required 
 ----
 
 <details>
-<summary><b>GRPC Example</b></summary>
+<summary><b>GRPC C2S Example</b></summary>
 
 **Request:**
 
     COMING SOON
 
+**Response:**
+
+    COMING SOON
+
+</details>
+
+----
+
+<details>
+<summary><b>GRPC S2S Example</b></summary>
+
+**Request:**
+
+    COMING SOON
 
 **Response:**
 
