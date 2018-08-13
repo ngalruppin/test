@@ -40,7 +40,7 @@ Call *GetRideListRequest*.
 
 ----
 
-**S2S Only: To query for a ride by user ID and by status and/or update time:**
+**S2S ONLY: To query for a ride by user ID and by status and/or update time:**
 
 Call *GetRideListByUserRequest*, passing the ID of the user whose rides you want to retrieve.
 
@@ -77,7 +77,7 @@ Call *GetRideListByUserRequest*, passing the ID of the user whose rides you want
 ----
 
 
-**S2S Only: To query for rides by last update time:**
+**S2S ONLY: To query for rides by last update time:**
 
 Call *GetRecentRidesRequest*, passing the minimum update time with which you want to filter the results. If no minimum time is sent, a default of the last two hours is used.
 

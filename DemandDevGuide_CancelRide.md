@@ -2,11 +2,13 @@
 
 You may want to cancel a ride after it was booked, following a cancellation request from the user.
 
->**Note:** Whether ride cancellation is allowed depends on the supplier's policy. If cancellation is not allowed, the user will be fined, and the call to *CancelRide* will fail. *CancelRide* will also fail if you try to cancel a ride that is not active.
+>**Note:** Whether ride cancellation is allowed depends on the supplier's policy. If cancellation isn't allowed, the user will be fined, and the call to *CancelRide* will fail. *CancelRide* will also fail if you try to cancel a ride that isn't active.
 
-**To cancel a ride after it was accepted:**
+**To cancel a ride after it was booked:**
 
 Call *CancelRide*, using the **ride_id** value that you received as a response to *CreateRide*.
+
+>**Note:** This call is identical for the C2S and S2S APIs.
 
 ----
 <details>
