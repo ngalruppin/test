@@ -121,7 +121,22 @@ To book a ride, the client first requests ride offers according to the required 
 ----
 
 <details>
-<summary><b>REST Example</b></summary>
+<summary><b>REST C2S Example</b></summary>
+
+**Request:**
+
+    COMING SOON
+
+**Response:**
+
+    COMING SOON
+
+</details>
+
+----
+
+<details>
+<summary><b>REST S2S Example</b></summary>
 
 **Request:**
 
@@ -158,7 +173,23 @@ To book a ride, the client first requests ride offers according to the required 
 ----
 
 <details>
-<summary><b>GRPC Example</b></summary>
+<summary><b>GRPC C2S Example</b></summary>
+
+**Request:**
+
+    COMING SOON
+
+
+**Response:**
+
+    COMING SOON
+
+</details>
+
+----
+
+<details>
+<summary><b>GRPC S2S Example</b></summary>
 
 **Request:**
 
